@@ -1,0 +1,37 @@
+{
+  "name": "Algorithms",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".mocharc.js",
+  "scripts": {
+    "test": "nyc mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^9.1.4",
+    "nyc": "^15.1.0"
+  },
+  "nyc": {
+    "extension": [
+      ".js"
+    ],
+    "reporter": [
+      "html",
+      "text-summary"
+    ],
+    "cache": true,
+    "all": true,
+    "exclude": [
+      "coverage",
+      ".mocharc.js",
+      "index.js",
+      "config.js",
+      "src/TelegramBot.js",
+      "src/FsCompanyRepository.js",
+      "src/GotHttpDriver.js",
+      "src/App.js"
+    ]
+  }
+}
