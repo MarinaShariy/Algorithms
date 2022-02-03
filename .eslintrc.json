@@ -16,8 +16,10 @@
         "curly": [2, "multi-line"],
         "no-unused-vars": "error",
         "no-trailing-spaces": "error",
-        "space-before-blocks": "error"
+        "space-before-blocks": "error",
+        "sonarjs/cognitive-complexity": ["error", 10]
     },
+    "plugins": ["sonarjs"],
     "parserOptions": {
         "ecmaVersion": 2020,
         "sourceType": "module"
